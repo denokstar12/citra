@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Anggota PMR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Absensi Anggota PMR</h2>
+
+        <form id="absensiForm">
+            <label>Nama Anggota:</label>
+            <input type="text" id="nama" required>
+
+            <label>Kelas:</label>
+            <input type="text" id="kelas" required>
+
+            <label>Status Kehadiran:</label>
+            <select id="status">
+                <option value="Hadir">Hadir</option>
+                <option value="Izin">Izin</option>
+                <option value="Sakit">Sakit</option>
+                <option value="Alpa">Alpa</option>
+            </select>
+
+            <button type="submit">Simpan Absensi</button>
+        </form>
+
+        <h3>Daftar Absensi Hari Ini</h3>
+        <table id="tabelAbsensi">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Status</th>
+                    <th>Waktu</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
